@@ -8,13 +8,100 @@
       <meta name="Autor" content="Itzel Beatriz Acosta Mendez">
       <meta name="Fecha" content="26 de febrero de 2025">
       <meta name="Descripción" content="Tablas">
+      <style>
+        table{
+            border: 1px solid #c5c5c5;border-collapse: collapse; width: 100%;
+        }
+        th{
+            color: #c5c5c5; text-transform: uppercase;
+        }
+        tr:nth-child(even){
+            background-color: #c5c5c5;
+        }
+        .color-box{
+            width: 30px;
+            height: 30px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .IndianRed{ background-color: #CD5C5C ;}
+        .LightCoral{background-color: #F08080;}
+        .Salmon{ background-color: #FA8072;}
+        .DarkSalmon{ background-color: #E9967A;}
+        .LightSalmon{ background-color: #FFA07A;}
+        .Crimson{ background-color: #DC143C;}
+        .Red{ background-color: #FF0000;}
+        .Firebrick{ background-color: #B22222;}
+        .DarkRed { background-color: #8B0000;}
+    </style>
     </head>
     <body>
         <h1>Unidad 2 | Actividad 4.1 (Tabla de colores)</h1>
         <h3> Nombres de Colores HTML Roja</h3>
-        <table>
-            <tr><td>Color</td><td>Name</td><td>HEX Code</td><td>RGB code</td></tr>
-        </table>
+       <table>
+        <thead>
+            <tr>
+                <th>Color</th>
+                <th>Name</th>
+                <th>Hex Code</th>
+                <th>RGB Code</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="color-box IndianRed"></span></td>
+                <td>IndianRed</td>
+                <td>#CD5C5C</td>
+                <td>rgb(205,92,92)</td>
+            </tr>
+            <tr>
+                <td><span class="color-box LightCoral"></span></td>
+                <td>LightCoral</td>
+                <td>#F08080</td>
+                <td>rgb(240,128,128)</td>
+            </tr>
+            <tr>
+                <td><span class="color-box Salmon"></span></td>
+                <td>Salmon</td>
+                <td>#FA8072</td>
+                <td>rgb(250,128,114)</td>
+            </tr>
+            <tr>
+                <td><span class="color-box DarkSalmon"></span></td>
+                <td>DarkSalmon</td>
+                <td>#E9967A</td>
+                <td>rgb(233,150,122)</td>
+            </tr>
+            <tr>
+                <td><span class="color-box LightSalmon"></span></td>
+                <td>LightSalmon</td>
+                <td>#FFA07A</td>
+                <td>rgb(255,160,122)</td>
+            </tr>
+            <tr>
+                <td><span class="color-box Crimson"></span></td>
+                <td>Crimson</td>
+                <td>#DC143C</td>
+                <td>rgb(220,20,60)</td>  
+            </tr>
+            <tr>
+                <td><span class="color-box Red"></span></td>
+                <td>Red</td>
+                <td>#FF0000</td>
+                <td>rgb(255,0,0)</td>
+            </tr>
+            <tr>
+                <td><span class="color-box Firebrick"></span></td>
+                <td>FireBrick</td>
+                <td>#B22222</td>
+                <td>rgb(178,34,34)</td>
+            </tr>
+            <td><span class="color-box DarkRed"></span></td>
+                <td>DarkRed</td>
+                <td>#8B0000</td>
+                <td>rgb(139,0,0)</td>
+        </tbody>
+       </table>
        
     </body>
     </html>
