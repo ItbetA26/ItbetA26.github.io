@@ -1,0 +1,6 @@
+<style>
+        table{ border: 1px solid #C5C5C5;border-collapse: collapse;width: 100%;}
+        th{ color: #C5C5C5;text-transform: uppercase;}
+        th,td{ text-align:left ;padding: 10px;}
+        tr:nth-child(even){background-color: #C5C5C5;}
+      </style>
