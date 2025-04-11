@@ -79,3 +79,38 @@
     transform: rotateY(90deg) translateZ(50px);
 }
 
+.barraProgreso{
+    height: 25px; width: 100%; background-color: gray;
+    color: black; font-size: 125%; font-weight: bold; text-align: center;
+    text-transform: uppercase; animation-timing-function: linear; animation-direction: reverse;
+    animation-name: progreso;animation-duration: 10s; animation-delay: 1.5s;
+}
+
+@keyframes progreso{
+    0%{ background-color: red; width: 0%}
+    50%{ background-color: gold; width: 50%}
+    100%{ background-color: darkgreen; width: 100%;}
+}
+
+.rainbow{
+    height: 100px;width: 100px;
+    color: white;font-weight: bold;
+    animation-name: rgb;animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.arcoiris{
+    height: 100px; width: 100px;
+    color: white; font-weight: bold;
+    animation-name: rgb;animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rgb{
+    0% { background-color: green;}
+    16%{ background-color: yellow;}
+    33%{ background-color: orange;}
+    50%{background-color: red;}
+    67%{ background-color: purple;}
+    82%{ background-color: blue;}
+    100%{ background-color: green;}
+}
