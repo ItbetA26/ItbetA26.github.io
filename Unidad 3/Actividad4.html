@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Unidad 3 | Actividad 04</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    
+</head>
+<body>
+    
+
+
+    <h1>Unidad 3 | Actividad 04 :: Tema (JavaScript)</h1>
+    <ol>
+        <li id="valor_1"><strong>UPSLP</strong></li>
+        <li id="valor_2"></li>
+        <li id="valor_3"></li>
+        <li id="valor_4"></li>
+        <li id="valor_5"></li>
+        <li id="valor_6"></li>
+        <li id="Valor_7"><strong>ITEMS(<i>Campus San Luis Potosi</i>)</strong></li>
+        <li id="valor_8"></li>
+        <li id="valor_9"></li>
+        <li id="valor_10"></li>
+    </ol>
+    <script>
+        //Asignar contenido
+        document.getElementById(valor_2).textContent="UCEM";
+        //Recuperar contenido
+        let varTemp=document.getElementById("valor_1").textContent;
+        document.getElementById("valor_3").textContent=varTemp+"!!!";
+        //textContent
+        varTemp=document.getElementById("valor_7").textContent;
+        document.getElementById("valor_8").textContent=varTemp;
+        // inerText
+        varTemp = document.getElementById("valor_7").innerText;
+        document.getElementById("valor_9").innerText=varTemp;
+        //innerHTML
+        varTemp=document.getElementById("valor_7").innerHTML;
+        document.getElementById("valor_10").innerHTML=varTemp
+
+    </script>
+</body>
+</html>

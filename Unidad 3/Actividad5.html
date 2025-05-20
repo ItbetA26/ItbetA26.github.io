@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <link rel="icon" type="image/x-icon" href="">
+    <meta charset="UTF-8">
+    <meta name="Autor" content="">
+    <meta name="Fecha" content="">
+    <meta name="Descripcion" content="">
+
+    <script>
+      function resumeForm() {
+        let varCadena = "Resumen de datos capturados\n";
+        
+        let varForm=document.forms["frmRegistro"];
+
+        let varNombre=varForm.elements["txtNombre"];
+        varCadena+="\n- Nombre Usuario:" + varNombre.value;
+
+        let varClave =varForm.elements["passClave"];
+        varCadena +="\n- Contraseña: "+ varClave.value
+        let varTelefono = varForm.elements["txtTelefono"];
+        varCadena += "\n - Telefono: " + varTelefono.value;
+        let varCorreo=varForm.elements["txtCorreo"];
+        varCadena += "\n- Correo electronico: "+varCorreo.value;
+        let varMensaje=varForm.elements["txtMensaje"];
+        varCadena += "\n- Mensaje: "+varMensaje.value;
+
+      }
+    </script>
+</head>
+<body>
+    <form onsubmit="resumeForm()" class="form-horizontal">
+        <fieldset>
+        
+        <!-- Form Name -->
+        <legend>Registro de Usuario</legend>
+        
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="txtnombre">Nombre de Usuario</label>  
+          <div class="col-md-6">
+          <input id="txtnombre" name="txtnombre" type="text" placeholder="placeholder" class="form-control input-md" required="">
+          <span class="help-block">Escribe tu nombre completo</span>  
+          </div>
+        </div>
+        
+        <!-- Password input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="passwordinput">Contraseña</label>
+          <div class="col-md-4">
+            <input id="passwordinput" name="passwordinput" type="password" placeholder="" class="form-control input-md" required="">
+            <span class="help-block">Debe ser al menos de 8 caracteres (únicamente utilizar letras y dígitos)</span>
+          </div>
+        </div>
+        
+        <!-- Prepended text-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="txtTelefono">Telefono</label>
+          <div class="col-md-5">
+            <div class="input-group">
+              <span class="input-group-addon">+52</span>
+              <input id="txtTelefono" name="txtTelefono" class="form-control" placeholder="(123) 456 789" type="text" required="">
+            </div>
+            
+          </div>
+        </div>
+        
+        <!-- Appended Input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="txtcorreo">Correo</label>
+          <div class="col-md-6">
+            <div class="input-group">
+              <input id="txtcorreo" name="txtcorreo" class="form-control" placeholder="ejemplo" type="text" required="">
+              <span class="input-group-addon">@upslp.edu.mx</span>
+            </div>
+            
+          </div>
+        </div>
+        <!-- Textarea -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textarea">Mensaje</label>
+          <div class="col-md-4">                     
+            <textarea class="form-control" id="textarea" name="textarea">Escribe tu mensaje</textarea>
+          </div>
+        </div>
+        
+        <!-- Button -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="btnEnviar"></label>
+          <div class="col-md-4">
+            <input  type="submit" id="btnEnviar" name="btnEnviar" class="btn btn-success">
+            <input type="reset" id="btnBorrar" name="btnBorrar" class="btn btn-danger">
+          </div>
+        </div>
+        
+        </fieldset>
+        </form>
+</body>
+</html>
