@@ -1,25 +1,37 @@
 <!DOCTYPE html>
-<html>
-    <head>
-    <!--Llenar los datos para: Title y Metadata-->
-      <title>Unidad 1 | Actividad 03</title>
-      <link rel="icon" type="image/x-icon" href="favicon.ico">
-      <meta charset="utf-8">
-      <meta name="Autor" content="Itzel Beatriz Acosta Mendez">
-      <meta name="Fecha" content="12 de Febrero del 2025">
-      <meta name="Descripción" content="Párrafos">
-    </head>
-    <body>
-    <!--Cambiar el título y colocar el contenido aqui-->
-      <h1>Unidad 1 | Actividad 03 Tema (Párrafos)</h1>
-      <p align="center">
-        Lorem ipsum odor amet, consectetuer adipiscing elit. Habitasse orci torquent metus etiam commodo tellus? Commodo mauris suspendisse nec fusce eleifend consequat bibendum diam vel. Cras viverra eleifend at massa purus vulputate. Nunc efficitur curae interdum mi nulla a. Neque class euismod litora sociosqu venenatis praesent aenean. Dolor ac lobortis orci at molestie volutpat. Torquent nibh ante curabitur, est taciti blandit. Nullam sagittis aliquam pulvinar platea, lectus ad tellus.
-      </p>
-      <p align="right">
-        Habitasse mus malesuada, facilisis dui lobortis ipsum tortor. Elit quis leo congue nulla; et pharetra. Lacinia lacus venenatis ligula imperdiet primis donec. Maximus habitant posuere gravida sem porttitor. Pretium ad lorem sed auctor ligula orci. Nisl proin ipsum congue tellus ante pulvinar lobortis nulla. Urna nostra maximus viverra a nibh magnis. Cubilia platea natoque pharetra augue etiam eleifend
-      </p>
-      <p align="justify">
-        Vestibulum ornare nec natoque lectus ad dolor pulvinar mus nibh. Netus suscipit dignissim aliquet pharetra sociosqu curabitur morbi. Gravida dapibus suscipit imperdiet netus habitasse. Dapibus egestas dui cubilia sodales aenean. Rhoncus ex finibus natoque tincidunt adipiscing per sit. Egestas a porta montes tortor semper litora. Diam sociosqu per phasellus urna nam dis sollicitudin consequat. Odio habitant per gravida, lacinia torquent velit in ultricies urna. Condimentum nascetur id dui vehicula metus.
-      </p>
-    </body>
+<html lang="en">
+<head>
+    <title>Unidad 3 | Actividad 03</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="Autor" content="Itzel Beatriz Acosta Mendez">
+    <meta name="Fecha" content="30 de abril de 2025">
+    <meta name="Descripcion" content="JavaScript">
+</head>
+<body>
+    <h1> Unidad 3 | Actividad 03 :: Tema (JavaScript)</h1>
+<script>
+    let opc = window.prompt ("Menu de opciones:\n 1.Sumar \n 2.Restar\n 3.Multiplicar\n 4. Dividir\nQué opción deseas:");
+    let val_1= Number(window.prompt("Dame el primer valor:"));
+    let val_2 = Number(window.prompt("Dame el segundo valor:"));
+    switch (opc){
+        case "1": //Sumar
+        document.write("<h3>Operacion suma</h3>");
+        document.write("<code>"+ val_1 + "+" + val_2 + "=" + (val_1 + val_2) + "</code>");
+        break;
+        case "2": //Restar
+        document.write("<h3>Operación Resta</h3>");
+        document.write("<code>"+ val_1 + "-" + val_2 + "=" + (val_1 - val_2) + "</code>");
+        case "4": //Multiplicar
+        break;
+        document.write("<h3>Operación Multiplica</h3>");
+        document.write("<code>"+ val_1 + "x" + val_2 + "=" + (val_1 * val_2) + "</code>");
+        break;
+         case "4": //Sumar
+        document.write("<h3>Operacion Divide</h3>");
+        document.write("<code>"+ val_1 + "÷" + val_2 + "=" + (val_1 / val_2) + "</code>");
+        break;
+    }
+    </script>    
+</body>
 </html>
