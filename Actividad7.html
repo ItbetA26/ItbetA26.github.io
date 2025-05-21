@@ -1,17 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Unidad 1 | Actividad 07</title>
-  <link rel="icon" type="images/x_icon" href="favicon.ico">
-  <meta charset="utf-8">
-  <meta name="Autor" content="Itzel Beatriz Acosta Mendez">
-  <meta name="Fecha" content="14 de Febrero del 2025">
-  <meta name="Descripcion" content="Enlaces">
+    <title>Unidad 3 | Actividad 07</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  ><h1>Unidad 1 | Actividad 07 :: Tema (Enlaces)</h1>
-  <a href="https://www.upslp.edu.mx/upslp/">UPSLP</a><br>
-  <a href="Actividad4.1.html">Ver Actividad 4.1</a><br>
-  <a href="archivos/images.jpg.jpg" target="_blank">Ver imagen</a><br>
+    <h1>Unidad 3 | Actividad 07 :: Tema (JavaScript)</h1>
+    <form class="form-horizontal" name="frmControles" action="#" method="post" onsubmit="funcionControles()">
+        <fieldset>
+            <!--For Name-->
+            <legend>Controles</legend>
+            <!--Multiple Radios-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="groupRadio">Elige el tamaño</label>
+                <div class="col-md-4">
+                    <div class="radio">
+                        <label for="groupRadio-0">
+                            <input type="radio" name="groupRadio" id="groupRadio-0" value="99" checked="checked">
+                            Combo pequeño
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label for="groupRadio-1">
+                            <input type="radio" name="groupRadio" id="groupRadio-1" value="129" checked="checked">
+                            Combo mediano
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label for="groupRadio-2">
+                            <input type="radio" name="groupRadio" id="groupRadio-2" value="159" checked="checked">
+                            Combo grande
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <!--Multiple Checkboxes-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="groupCheck">Elige ingredientes</label>
+                <div class="col-md-4">
+                    <div class="checkbox">
+                        <label for="groupCheck-0">
+                            <input type="checkbox" name="groupCheck" id="groupCheck-0" value="1">
+                            Queso
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label for="groupCheck-1">
+                            <input type="checkbox" name="groupCheck" id="groupCheck-1" value="2">
+                            Jamon
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label for="groupCheck-2">
+                            <input type="checkbox" name="groupCheck" id="groupCheck-2" value="3">
+                            Tocino
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label for="groupCheck-3">
+                            <input type="checkbox" name="groupCheck" id="groupCheck-3" value="4">
+                            Champilon
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label for="groupCheck-4">
+                            <input type="checkbox" name="groupCheck" id="groupCheck-4" value="5">
+                            Pepperoni
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <!--Selet Basic-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="seletBasic">Elige Complemento</label>
+                <div class="col-md-5">
+                    <select name="seletBasic" id="seletBasic" class="form-control"></select>
+                    <option value="0">Ninguno</option>
+                    <option value="1">Papas</option>
+                    <option value="2">Brownies</option>
+                    <option value="3">Refresco</option>
+                </div>
+            </div>
+            <!--Select Multiple-->
+            <div>
+                <label class="col-md-4 control-label" for="selectMultiple">Elige otras opciones</label>
+                <div class="col-md-5">
+                    <select name="selectMultiple" id="selectMultiple" class="form-control" multiple="multiple"></select>
+                    <option value="1">Mayonesa</option>
+                    <option value="2">Cátsup</option>
+                    <option value="3">Mostanza</option>
+                    <option value="4">Ranch</option>
+                    <option value="5">Pepinillos</option>
+                    <option value="6">Jalapeño</option>
+                </div>
+            </div>
+            <!--Otros controles-->
+            <div class="form-group">
+                <div class="col-md-8">
+                    <label>Archivos</label>&nbsp;<input type="file" id="varFile"><br>
+                    <label>Color</label>&nbsp;<input type="color" id="varColor"><br>
+                    <label>Fechas</label>&nbsp;<input type="date" id="varDate"><br>
+                    <label>Tiempoo</label>&nbsp;<input type="time" id="varTime"><br>
+                    <label>Semana</label>&nbsp;<input type="week" id="varWeek"><br>
+                    <label>Mes</label>&nbsp;<input type="month" id="varMonth"><br>
+                    <label>Numeros</label>&nbsp;<input type="number" id="varNumber" min="0" max="100" step="10" value="50"><br>
+                    <label>Rango</label>&nbsp;<input type="range" id="varRange" min="0" max="100" step="1" value="50"><br>
+
+                </div>
+
+            </div>
+            <!--Butoon-->
+            <div class="form-group">
+                <div class="col-md-4">
+                    <input type="submit" id="btnEnviar" name="btnEnviar" class="btn btn-primary">
+                    <input type="reset" id="btnReiniciar" name="btnReiniciar" class="btn btn-info">
+                </div>
+            </div>
+        </fieldset>
+    </form>
 </body>
 </html>
