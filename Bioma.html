@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biomas</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      background-color: green;
+    }
+
+    h1 {
+      font-family: 'Pixelify Sans', sans-serif;
+      color: black;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .navbar-custom {
+      background-color: #333;
+    }
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link,
+    .navbar-custom .dropdown-item {
+      color: white;
+    }
+
+    .navbar-custom .nav-link:hover,
+    .navbar-custom .dropdown-item:hover {
+      color: #ccc;
+    }
+
+    .navbar-custom .dropdown-menu {
+      background-color: #444;
+    }
+
+    .card-custom {
+      background-color: rgba(255, 255, 255, 0);
+      border: 2px solid saddlebrown;
+      color: black;
+      box-shadow: 0 0 10px 2px rgba(139, 69, 19, 0.7);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .card-custom:hover {
+      box-shadow: 0 0 15px 4px rgba(160, 82, 45, 0.9);
+    }
+
+    .btn-custom {
+      display: block;
+      margin: 10px auto 0;
+      background-color: saddlebrown;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn-custom:hover {
+      background-color: #5c4033;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <a class="navbar-brand" href="#">MINECRAFT</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Historia</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="creadores.html">Creadores</a>
+            <a class="dropdown-item" href="idea.html">Idea</a>
+            <a class="dropdown-item" href="Desarrollo.html">Desarrollo</a>
+            <a class="dropdown-item" href="Minecraft_hoy.html">Minecraft hoy</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Mobs</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Clasificaciones</a>
+            <a class="dropdown-item" href="#">Utilidad</a>
+            <a class="dropdown-item" href="#">Funcionalidad</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="Bioma.html">Biomas</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Crafteos</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Funcionalidad</a>
+            <a class="dropdown-item" href="#">Clasificación</a>
+            <a class="dropdown-item" href="#">Evolución</a>
+            <a class="dropdown-item" href="#">Herramientas Principales</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Mods</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Qué son</a>
+            <a class="dropdown-item" href="#">Cómo funcionan</a>
+            <a class="dropdown-item" href="#">Clasificación</a>
+            <a class="dropdown-item" href="#">Principal uso</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <h1>Biomas</h1>
+
+  <div class="card-deck">
+    <div class="card card-custom">
+      <img class="card-img-top" src="biomas/nevado.jpg" alt="Nevado">
+      <div class="card-body">
+        <h5 class="card-title">Biomas nevados</h5>
+        <p class="card-text">Nieva en lugar de llover; el agua expuesta al cielo está congelada.</p>
+        <a href="nevado.html" class="btn btn-custom">Ver más</a>
+      </div>
+    </div>
+    <div class="card card-custom">
+      <img class="card-img-top" src="biomas/frio.jpg" alt="Frio">
+      <div class="card-body">
+        <h5 class="card-title">Biomas Frios</h5>
+        <p class="card-text">Comienza a nevar a ciertas alturas; el follaje y agua cambian de color.</p>
+        <a href="frios.html" class="btn btn-custom">Ver más</a>
+      </div>
+    </div>
+    <div class="card card-custom">
+      <img class="card-img-top" src="Multimedios/llanura.webp" alt="Templado">
+      <div class="card-body">
+        <h5 class="card-title">Bioma Templado</h5>
+        <p class="card-text">Biomas verdes con lluvias. El follaje varía en tonalidades y el agua es azul.</p>
+        <a href="Exuberante.html" class="btn btn-custom">Ver más</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-deck mt-4">
+    <div class="card card-custom">
+      <img class="card-img-top" src="biomas/End.jpg" alt="End">
+      <div class="card-body">
+        <h5 class="card-title">End</h5>
+        <p class="card-text">Una dimensión distinta, con agua color morado.</p>
+        <a href="End.html" class="btn btn-custom">Ver más</a>
+      </div>
+    </div>
+    <div class="card card-custom">
+      <img class="card-img-top" src="biomas/Savanna.webp" alt="Seco">
+      <div class="card-body">
+        <h5 class="card-title">Biomas Secos/Cálidos</h5>
+        <p class="card-text">No llueve ni nieva. Hierba oliva o marrón. El agua es verde claro.</p>
+        <a href="Calidos.html" class="btn btn-custom">Ver más</a>
+      </div>
+    </div>
+    <div class="card card-custom">
+      <img class="card-img-top" src="biomas/nether.jpg" alt="Nether">
+      <div class="card-body">
+        <h5 class="card-title">Nether</h5>
+        <p class="card-text">Dimensión seca sin agua. Todos los biomas del Nether son extremos.</p>
+        <a href="nether.html" class="btn btn-custom">Ver más</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card-custom mt-4 mx-auto" style="width: 18rem;">
+    <img class="card-img-top" src="biomas/oceano.jpg" alt="Oceánico">
+    <div class="card-body">
+      <h5 class="card-title">Bioma oceánico</h5>
+      <p class="card-text">Grandes biomas de agua hasta y=63, con montañas submarinas.</p>
+      <a href="#" class="btn btn-custom">Ver más</a>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
