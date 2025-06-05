@@ -77,6 +77,24 @@
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
       }
+      .navbar-custom {
+      background-color: #333;
+    }
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link,
+    .navbar-custom .dropdown-item {
+      color: white;
+    }
+
+    .navbar-custom .nav-link:hover,
+    .navbar-custom .dropdown-item:hover {
+      color: #ccc;
+    }
+
+    .navbar-custom .dropdown-menu {
+      background-color: #444;
+    }
     </style>
 
     
@@ -84,77 +102,76 @@
     <link href="carousel.css" rel="stylesheet">
   </head>
   <body>
-<header data-bs-theme="dark">
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="https://ferchos777.github.io/proyecto/portada.html">Minecraft</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">INICIO</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Historia
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="">Creadores</a>
-                        <a class="dropdown-item" href="">Idea</a>
-                        <a class="dropdown-item" href="">Desarrollo</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="">Minecraft hoy</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mobs</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="">Clasificaciones</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="">Utilidad</a>
-                        <a class="dropdown-item" href="">Funcionalidad</a>
-                        <!--
-                        <a class="dropdown-item" href="#">Ing. Tecnologias de la Informacion</a>
-                        <a class="dropdown-item" href="#">Ing. Manufactura Avanzada</a>-->
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Biomas
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="bioma.html">Clasificacion</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Crafteos
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="Funcionalidad craf.html">Funcionalidad</a>
-                        <a class="dropdown-item" href="clasificacion.html">Clasificacion</a>
-                        <a class="dropdown-item" href="evolucion.html">Evolucion</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="HerraminetasPrincipales.html">Herramientas principales</a>
-                    </div>
-                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Mods
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Que son</a>
-                        <a class="dropdown-item" href="#">Como fucionan</a>
-                        <a class="dropdown-item" href="#">Clasificacion</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Principal uso</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</header>
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">MINECRAFT</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- HISTORIA -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="historiaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Historia
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="historiaDropdown">
+            <li><a class="dropdown-item" href="creadores.html">Creadores</a></li>
+            <li><a class="dropdown-item" href="idea.html">Idea</a></li>
+            <li><a class="dropdown-item" href="Desarrollo.html">Desarrollo</a></li>
+            <li><a class="dropdown-item" href="Minecraft_hoy.html">Minecraft hoy</a></li>
+          </ul>
+        </li>
+
+        <!-- MOBS -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="mobsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Mobs
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="mobsDropdown">
+            <li><a class="dropdown-item" href="#">Clasificaciones</a></li>
+            <li><a class="dropdown-item" href="#">Utilidad</a></li>
+            <li><a class="dropdown-item" href="#">Funcionalidad</a></li>
+          </ul>
+        </li>
+
+        <!-- BIOMAS -->
+        <li class="nav-item">
+          <a class="nav-link disabled" href="Bioma.html">Biomas</a>
+        </li>
+
+        <!-- CRAFTEOS -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="crafteosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Crafteos
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="crafteosDropdown">
+            <li><a class="dropdown-item" href="#">Funcionalidad</a></li>
+            <li><a class="dropdown-item" href="#">Clasificación</a></li>
+            <li><a class="dropdown-item" href="#">Evolución</a></li>
+            <li><a class="dropdown-item" href="#">Herramientas Principales</a></li>
+          </ul>
+        </li>
+
+        <!-- MODS -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="modsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Mods
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="modsDropdown">
+            <li><a class="dropdown-item" href="#">Qué son</a></li>
+            <li><a class="dropdown-item" href="#">Cómo funcionan</a></li>
+            <li><a class="dropdown-item" href="#">Clasificación</a></li>
+            <li><a class="dropdown-item" href="#">Principal uso</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
 
 <main>
 
@@ -303,6 +320,8 @@
 </main>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kFx0WCzJYiUyaNE5/2qgKnW5Zz1go9OhvmyLgYha3h2HwYV3G9JOTUg2kB2XEyL+" crossorigin="anonymous"></script>
+
 
     </body>
 </html>
