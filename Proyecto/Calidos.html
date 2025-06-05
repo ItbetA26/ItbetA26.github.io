@@ -95,6 +95,24 @@
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
       }
+      .navbar-custom {
+      background-color: #333;
+    }
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link,
+    .navbar-custom .dropdown-item {
+      color: white;
+    }
+
+    .navbar-custom .nav-link:hover,
+    .navbar-custom .dropdown-item:hover {
+      color: #ccc;
+    }
+
+    .navbar-custom .dropdown-menu {
+      background-color: #444;
+    }
     </style>
 
     
@@ -134,16 +152,56 @@
       </div>
     </div>
   </div>
-  <div class="navbar navbar-dark bg-dark shadow-sm">
-    <div class="container">
-      <a href="#" class="navbar-brand d-flex align-items-center">
-        <strong>MINECRAFT</strong>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+    <a class="navbar-brand" href="#">MINECRAFT</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Historia</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="creadores.html">Creadores</a>
+            <a class="dropdown-item" href="idea.html">Idea</a>
+            <a class="dropdown-item" href="Desarrollo.html">Desarrollo</a>
+            <a class="dropdown-item" href="Minecraft_hoy.html">Minecraft hoy</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Mobs</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Clasificaciones</a>
+            <a class="dropdown-item" href="#">Utilidad</a>
+            <a class="dropdown-item" href="#">Funcionalidad</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="Bioma.html">Biomas</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Crafteos</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Funcionalidad</a>
+            <a class="dropdown-item" href="#">Clasificación</a>
+            <a class="dropdown-item" href="#">Evolución</a>
+            <a class="dropdown-item" href="#">Herramientas Principales</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Mods</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Qué son</a>
+            <a class="dropdown-item" href="#">Cómo funcionan</a>
+            <a class="dropdown-item" href="#">Clasificación</a>
+            <a class="dropdown-item" href="#">Principal uso</a>
+          </div>
+        </li>
+      </ul>
     </div>
-  </div>
+  </nav>
+
 </header>
 
 <main>
