@@ -13,20 +13,25 @@
       margin: 0;
       padding: 0;
     }
-    nav {
-      background-color: black;
-      padding: 15px;
-      text-align: center;
+        .navbar-custom {
+      background-color: #333;
     }
-    nav a {
-      color: #ffd54f;
-      text-decoration: none;
-      margin: 0 20px;
-      font-weight: bold;
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link,
+    .navbar-custom .dropdown-item {
+      color: white;
     }
-    nav a:hover {
-      text-decoration: underline;
+
+    .navbar-custom .nav-link:hover,
+    .navbar-custom .dropdown-item:hover {
+      color: #ccc;
     }
+
+    .navbar-custom .dropdown-menu {
+      background-color: #444;
+    }
+
     h1 {
       text-align: center;
       background-color: #4e0a0a;
@@ -62,11 +67,54 @@
 </head>
 <body>
 
-  <nav>
-    <a href="#">MINECRAFT</a>
-    <a href="#">Biomas del Overworld</a>
-    <a href="#">Biomas del Nether</a>
-    <a href="#">Biomas del End</a>
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <a class="navbar-brand" href="">MINECRAFT</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Historia</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="creadores.html">Creadores</a>
+            <a class="dropdown-item" href="idea.html">Idea</a>
+            <a class="dropdown-item" href="Desarrollo.html">Desarrollo</a>
+            <a class="dropdown-item" href="Minecraft_hoy.html">Minecraft hoy</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Mobs</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Clasificaciones</a>
+            <a class="dropdown-item" href="#">Utilidad</a>
+            <a class="dropdown-item" href="#">Funcionalidad</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="Bioma.html">Biomas</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Crafteos</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="Funcionalidad craf.html">Funcionalidad</a>
+            <a class="dropdown-item" href="clasificacion.html">Clasificación</a>
+            <a class="dropdown-item" href="evolucion.html">Evolución</a>
+            <a class="dropdown-item" href="HerraminetasPrincipales.html">Herramientas Principales</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Mods</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Qué son</a>
+            <a class="dropdown-item" href="#">Cómo funcionan</a>
+            <a class="dropdown-item" href="#">Clasificación</a>
+            <a class="dropdown-item" href="#">Principal uso</a>
+          </div>
+        </li>
+      </ul>
+    </div>
   </nav>
 
   <h1>Biomas del Nether – Minecraft</h1>
